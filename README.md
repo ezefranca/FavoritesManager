@@ -1,6 +1,8 @@
-# Favorites Manager [![Swift](https://github.com/ezefranca/FavoritesManager/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/ezefranca/FavoritesManager/actions/workflows/swift.yml)
+# FavoritesManager [![Swift](https://github.com/ezefranca/FavoritesManager/actions/workflows/swift.yml/badge.svg?branch=main)](https://github.com/ezefranca/FavoritesManager/actions/workflows/swift.yml)
 
 `FavoritesManager` is a Swift package that provides a simple way to manage a list of favorite items using iCloud. It uses `NSUbiquitousKeyValueStore` to store and synchronize data across devices.
+
+![favoritesmanager2 copy](https://user-images.githubusercontent.com/3648336/220739265-f5e3e155-8fee-4af8-8ad8-e3ca4e552a06.png)
 
 ## Installation
 

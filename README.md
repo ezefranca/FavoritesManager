@@ -39,6 +39,15 @@ After completing these steps, your app should be able to access iCloud key-value
 
 # Usage
 
+<br>
+
+| :warning: WARNING                                          |
+|-----------------------------------------------------------|
+| There is a per-key value size limit of 1 MB, and a maximum of 1024 keys. If you attempt to write data that exceeds these quotas, the write attempt fails and no change is made to your iCloud key-value storage.  |
+| Check [NSUbiquitousKeyValueStore](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore)                                  |
+
+<br>
+
 To use `FavoritesManager`, you need to create a struct or class that conforms to the `Codable` and `Equatable` protocols. You can then use it to save, remove, and retrieve favorite items. Here's a simple example of how you could use `FavoritesManager`:
 
 
@@ -51,7 +60,7 @@ struct Person: Codable, Equatable {
     let age: Int
 }
 
-var manager = FavoritesManager<Person>()
+var manager = FavoritesManager<Person>(key: "people")
 let person1 = Person(name: "John", age: 25)
 let person2 = Person(name: "Mary", age: 30)
 let person3 = Person(name: "Alex", age: 35)

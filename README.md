@@ -39,7 +39,7 @@ After completing these steps, your app should be able to access iCloud key-value
 
 # Usage
 
-To use FavoritesManager, you need to create a struct that conforms to the Codable and Equatable protocols. You can then use the FavoritesManagerProtocol to save, remove, and retrieve favorite items. Here's a simple example of how you could use FavoritesManager:
+To use `FavoritesManager`, you need to create a struct or class that conforms to the `Codable` and `Equatable` protocols. You can then use it to save, remove, and retrieve favorite items. Here's a simple example of how you could use `FavoritesManager`:
 
 
 ```swift

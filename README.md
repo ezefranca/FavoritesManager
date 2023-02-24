@@ -47,7 +47,7 @@ After completing these steps, your app should be able to access iCloud key-value
 
 | :warning: WARNING                                          |
 |-----------------------------------------------------------|
-| There is a per-key value size limit of 1 MB, and a maximum of 1024 keys. If you attempt to write data that exceeds these quotas, the write attempt fails and no change is made to your iCloud key-value storage.  |
+| There is a per-key value size limit of 1 MB, and a maximum of 1024 keys. If you attempt to write data that exceeds these quotas, the write attempt fails and no change is made to your iCloud key-value storage. With `NSUbiquitousKeyValueStore` you’re limited to 1 MB of total space. Don’t use it to store large amounts of data.  |
 | Check [NSUbiquitousKeyValueStore](https://developer.apple.com/documentation/foundation/nsubiquitouskeyvaluestore)                                  |
 
 <br>
